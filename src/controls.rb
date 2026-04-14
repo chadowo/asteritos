@@ -3,12 +3,12 @@
 # to keep uniformity between actions with multiple
 # keybindings and others with one
 module Controls
-  UP = Set[Gosu::KB_W, Gosu::KB_UP]
-  DOWN = Set[Gosu::KB_S, Gosu::KB_DOWN]
-  LEFT = Set[Gosu::KB_A, Gosu::KB_LEFT]
-  RIGHT = Set[Gosu::KB_D, Gosu::KB_RIGHT]
-  FIRE = Set[Gosu::KB_SPACE]
-  ENTER = Set[Gosu::KB_RETURN]
+  UP    = Set[Gosu::KB_W, Gosu::KB_UP, Gosu::GP_DPAD_UP]
+  DOWN  = Set[Gosu::KB_S, Gosu::KB_DOWN, Gosu::GP_DPAD_DOWN]
+  LEFT  = Set[Gosu::KB_A, Gosu::KB_LEFT, Gosu::GP_DPAD_LEFT]
+  RIGHT = Set[Gosu::KB_D, Gosu::KB_RIGHT, Gosu::GP_DPAD_RIGHT]
+  FIRE  = Set[Gosu::KB_SPACE, Gosu::GP_BUTTON_0]
+  ENTER = Set[Gosu::KB_RETURN, Gosu::GP_BUTTON_9]
   CLOSE = Set[Gosu::KB_ESCAPE]
 
   # Return whether the keybinding is pressed or not, the keybinding
